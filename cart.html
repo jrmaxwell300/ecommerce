@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>cart</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/53f0328f1a.js"></script>
 </head>
@@ -17,9 +17,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
 
             </ul>
@@ -30,76 +30,82 @@
         </div>
     </section>
 
-    <section class="page-header" id="about-header">
-        <h2>#Know Us</h2>
-        <p>Welcome to CASA!</p>
+    <section class="page-header" id="contact-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
     </section>
-    <section class="about-head" id="section-p1">
-        <img src="img/about/a6.jpg" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>Casa was lanched in july 2023, and committed to being your preferred shopping platform with independent
-                fashion designers. Whether you are looking for tactical style, or a poker jacket, casual coat or jeans
-                and base layer T-shirts, you can always find here.We offer latest fashion clothes, tops, bottoms and
-                shoes, including all ages mens and some womens apparels with high quality and affordable prices </p>
-            <abbr title="">Create stunning images with as much or as little control as you
-                like thanks to a choice of Basic and Creative modes</abbr>
-
-            <br><br>
-            <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as
-                little control as you
-                like thanks to a choice of Basic and Creative modes</marquee>
-        </div>
-
-    </section>
-
-    <section class="about-app" id="section-p1">
-        <h1><b>Download Our <a href="#">App</a></b></h1>
-        <div class="video">
-            <video autoplay muted loop src="img/about/1.mp4"></video>
-        </div>
-    </section>
-
-    <section class="featuer" id="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Happy Sells</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
-        </div>
+    <section class="cart" id="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$200.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$200.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-shirts</td>
+                    <td>$200.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+            </tbody>
+        </table>
 
     </section>
-
-    <section class="newletter" id="section-p1">
-        <div class="newtext">
-            <h4>Sign Up For Newletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+    <section class="cart-add" id="section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your E-mail address">
-            <button class="normal">Sign Up</button>
+        <div class="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
-
     </section>
-
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="">
